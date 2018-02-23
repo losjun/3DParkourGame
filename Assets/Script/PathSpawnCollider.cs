@@ -18,6 +18,7 @@ public class PathSpawnCollider : MonoBehaviour {
 
         if(hit.gameObject.tag == Constants.PlayerTag)
         {
+            /*
             int randomSpawnPoint = Random.Range(0, PathSpawnPoints.Length);
 
             for (int i = 0; i < PathSpawnPoints.Length; i++)
@@ -34,6 +35,9 @@ public class PathSpawnCollider : MonoBehaviour {
                     //Instantiate(SpawnBorder, position, Quaternion.Euler(rotation));
                 }
             }
+            */
+
+            Instantiate(Path, PathSpawnPoints[0].position, PathSpawnPoints[0].rotation);
         }
     }
 }

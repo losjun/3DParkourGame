@@ -57,7 +57,11 @@ public class UIManager : MonoBehaviour {
         ScoreText.text = score.ToString();
     }
 
-
+    public void SetScore(float num)
+    {
+        score = num;
+        UpdateScoreText();
+    }
     public void SetStatus(string str)
     {
         StatusText.text = str;
